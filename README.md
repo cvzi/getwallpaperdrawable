@@ -51,3 +51,9 @@ com.github.cvzi.getwallpaperdrawable E/MainActivity: java.lang.SecurityException
         at android.os.storage.StorageManager.checkExternalStoragePermissionAndAppOp(StorageManager.java:1965)
         at android.os.storage.StorageManager.checkPermissionReadImages(StorageManager.java:1931)
 ```
+
+## Screenshots
+
+| Android 12 | Android 13 Beta 3.2 |
+| --- | ---- |
+| <img src="/screenshots/Android 12.webp" alt="Screenshot Android 12" /> | <img src="/screenshots/Android 13.png" alt="Screenshot Android 13" /> |
