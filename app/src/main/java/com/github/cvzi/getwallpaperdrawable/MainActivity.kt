@@ -48,15 +48,14 @@ class MainActivity : Activity() {
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED
                 ) {
                     Log.v("MainActivity", "Permission granted")
-                    (findViewById<View>(R.id.textView) as TextView).text = "Permission granted"
-                    showWallpaper()
+                    (findViewById<View>(R.id.textViewPermission) as TextView).text = "Permission was granted"
                 } else {
                     Log.v("MainActivity", "Permission denied")
-                    (findViewById<View>(R.id.textView) as TextView).text = "Permission denied"
+                    (findViewById<View>(R.id.textViewPermission) as TextView).text = "Permission was denied"
                 }
-                return
             }
         }
+        showWallpaper()
     }
 
     private fun showWallpaper() {
@@ -65,11 +64,11 @@ class MainActivity : Activity() {
             wallpaperManager.drawable
         } catch (e: SecurityException) {
             Log.e("MainActivity", "", e)
-            (findViewById<View>(R.id.textView) as TextView).text = e.stackTraceToString()
+            (findViewById<View>(R.id.textViewError) as TextView).text = e.stackTraceToString()
             null
         }
         drawable?.let {
-            (findViewById<View>(R.id.textView) as TextView).text = "Success!"
+            (findViewById<View>(R.id.textViewError) as TextView).text = ""
             (findViewById<View>(R.id.imageView) as ImageView).setImageDrawable(it)
         }
     }
