@@ -1,5 +1,14 @@
 # getwallpaperdrawable
 
+## Resolution: Won't fix
+> https://issuetracker.google.com/issues/237124750#comment60
+> 
+> <ad... @google.com> May 2, 2023 03:49PM [#60](https://issuetracker.google.com/issues/237124750#comment60)
+> Status: Won't Fix (Intended Behavior)
+>
+> We discussed the behavior with our product and engineering team and they were supportive of keeping the API only accessible to privileged system apps.
+
+
 ## Problem:
 
 With `targetSdk 33` on **Android 13** it is not possible to request
